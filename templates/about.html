@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <meta charset="UTF-8">
- <title>My Website - About</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+    <title>My Website - About</title>
 </head>
+
 <body>
- <h1>Nicholas Smith</h1>
- <p>I'm a 3rd year computer science major who loves movies and playing the sims</p>
+    <header>
+        <h1>Nicholas Smith</h1>
+    </header>
+    <p>I'm a 3rd year Computer Science student who loves movies and playing the Sims.</p>
+    <img src="{{url_for('static', filename='images/gaming.png') }}"
+        alt="picture of people with a playstation controller" class="center">
 </body>
-</html> 
+
+</html>
